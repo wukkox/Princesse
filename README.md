@@ -9,8 +9,7 @@ Voici une liste des fonctionnalités disponible:
 * On peut également rechercher une princesse par son id.
 * Ajouter sa princesse dans la base de l'application.
 
-
-<img src="https://i0.wp.com/www.webcky.fr/blog/wp-content/uploads/2016/09/site_web_modele_mvc.png?fit=450%2C269" alt="Model MVC" align="middle">
+<img src="https://i0.wp.com/www.webcky.fr/blog/wp-content/uploads/2016/09/site_web_modele_mvc.png?fit=450%2C269" alt="Model MVC" >
 
 Le développement de cette application a été pensé sur le Design Pattern MVC.
 * **Model** : Constructeur de l'objet princesse
@@ -48,3 +47,5 @@ Le développement de cette application a été pensé sur le Design Pattern MVC.
 # Page d'accueil de l'application
 
 <img src="https://media.discordapp.net/attachments/631548145737662504/656818808002183168/unknown.png?width=1200&height=568">
+
+<a href="https://api-spring-simplon.cfapps.io/">Version live</a>
