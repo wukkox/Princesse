@@ -81,6 +81,10 @@ function chargerPerso(item) {
 	} else {
 		newMenuItemUrl.src = item["url"];
 	}
+	
+	if (item["name"] === "Josselin") {
+		newMenuItemUrl.src = "https://cdn.discordapp.com/attachments/631565747281199104/656950061712015392/201907311605280471226.jpg";
+	}
 
 	let newMenuBg = document.getElementById("body")
 	if (item["name"] === "Maureen") {
@@ -89,6 +93,26 @@ function chargerPerso(item) {
 
 	else if (item["name"] === "maureen") {
 		newMenuBg.className = "easterEgg";
+	}
+	
+	else if (item["name"] === "Nico") {
+		newMenuBg.className = "easterEgg";
+		newMenuItemUrl.src = "https://cdn.discordapp.com/attachments/631565747281199104/656946996069924875/Princesse-2017-1.jpg";
+	}
+
+	else if (item["name"] === "nico") {
+		newMenuBg.className = "easterEgg";
+		newMenuItemUrl.src = "https://cdn.discordapp.com/attachments/631565747281199104/656946996069924875/Princesse-2017-1.jpg";
+	}
+	
+	else if (item["name"] === "nicolas") {
+		newMenuBg.className = "easterEgg";
+		newMenuItemUrl.src = "https://cdn.discordapp.com/attachments/631565747281199104/656946996069924875/Princesse-2017-1.jpg";
+	}
+
+	else if (item["name"] === "Nicolas") {
+		newMenuBg.className = "easterEgg";
+		newMenuItemUrl.src = "https://cdn.discordapp.com/attachments/631565747281199104/656946996069924875/Princesse-2017-1.jpg";
 	}
 
 	else {
@@ -104,6 +128,6 @@ function ajoutPrincesse() {
 			description : document.getElementById("inputDescription").value,
 			url : document.getElementById("inputUrl").value
 		});
-		document.location.reload(true);
+		//document.location.reload(true);
 	});
 }
