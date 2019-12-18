@@ -9,7 +9,8 @@ Voici une liste des fonctionnalités disponible:
 * On peut également rechercher une princesse par son id.
 * Ajouter sa princesse dans la base de l'application.
 
-![model MVC](https://i0.wp.com/www.webcky.fr/blog/wp-content/uploads/2016/09/site_web_modele_mvc.png?fit=450%2C269 "Model MVC")
+
+<img src="https://i0.wp.com/www.webcky.fr/blog/wp-content/uploads/2016/09/site_web_modele_mvc.png?fit=450%2C269" alt="Model MVC" align="middle">
 
 Le développement de cette application a été pensé sur le Design Pattern MVC.
 * **Model** : Constructeur de l'objet princesse
