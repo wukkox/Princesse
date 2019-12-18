@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<title id="title">Un titre qui change avec l'api princesse</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+	crossorigin="anonymous"></script>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+
+
+
+	<div class="container">
+		<nav class="liste">
+
+			<button class="btn badge-pill btn-primary dropdown-toggle "
+				type="button" data-toggle="dropdown" aria-haspopup="true"
+				aria-expanded="false">Princesse</button>
+			<div id="style-1" class="dropdown-menu dropOverflow bg-secondary scrollbar"
+				aria-labelledby="dropdownMenu"></div>
+				<!-- Affiche un bouton pour le resultat de la recherche âr id -->
+			 
+			<form class="form-row">
+				&nbsp; <input class="form-control bg-transparent col-4" id="SearchId"
+					type="search" placeholder="Search" aria-label="Rechercher" required="required">
+				&nbsp;
+				<button class="btn badge-pill btn-primary" id="Search" type="button">Rechercher</button>
+			</form>
+		</nav>
+
+		<!-- 	Squelette déjà rempli en static puis modfier à la volée via le js
+		Plusieurs avantages à cette méthode :
+		1 - Ne pas avoir de soucis de chargement en cas d'erreur avec la partie back de l'application
+		2 - Plus de facilité à modéliser son site avec un css et une ergonomie adaptée
+		3 - La repartition des taches n'est pas influencer entre le design et la conception -->
+
+		<div class="container">
+			<div class=" bg-transparent ">
+				<div class="row no-gutters">
+					<div class="col-8">
+						<div class="card-body">
+							<h4 id="card-titre" class="card-title">Elsa princesse Disney</h4>
+							<h4 class="heart"></h4>
+							<p id="card-texte" class="card-text">Elsa est la reine
+								d'Arendelle et grande sœur d'Anna. Elle semble majestueuse et
+								réservée, mais elle vit en réalité dans la peur, hantée par le
+								matin où elle a failli tuer sa sœur à cause de ses pouvoirs.
+								Elle a tout fait pour les cacher et essayer de les maîtriser,
+								mais elle ne peut les contenir le soir de son couronnement.
+								Accusée de sorcellerie, elle fuit hors du royaume et ses fortes
+								émotions déclenchent un hiver éternel sur Arendelle. Ne pouvant
+								elle-même l'arrêter, elle est convaincue d'être un monstre
+								destiné à être solitaire et que personne ne peut l'aider.</p>
+						</div>
+					</div>
+					<div class="col-3">
+						<img id="card-photo"
+							src="https://media1.s-nbcnews.com/j/newscms/2019_40/1487941/elsa-frozen-today-square-190930_9b00e4263b90a7a2da04c98b01babf94.fit-760w.jpg"
+							class="card-img" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br> <br> <br> <br>
+		<div class="container was-validated">
+			<form>
+				<div class="form-row ">
+					<div class="form-group col-6 ">
+						<label for="inputNom">Nom de la princesse</label> <input
+							type="text" class="form-control bg-transparent" id="inputNom"
+							placeholder="Olivier" required="required">
+					</div>
+					<div class="form-group col-6 ">
+						<label for="inputUnivers">Univers de la princesse</label> <input
+							type="text" class="form-control bg-transparent" id="inputUnivers"
+							placeholder="Simplon" required="required">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputDescription">Résumé de la princesse</label>
+					<textarea class="form-control bg-transparent "
+						id="inputDescription" rows="5" required="required"></textarea>
+				</div>
+				<div class="form-row ">
+					<div class="form-group col-6">
+						<label for="inputUrl">Lien vers la photo de la princesse</label> <input
+							type="text" class="form-control bg-transparent" id="inputUrl"
+							value="https://radiodisneyclub.fr/wp-content/uploads/2018/05/princesse-disney.jpg">
+					</div>
+				</div>
+				<button type="button" id="submitPrincesse" class="btn btn-primary">Ajouter</button>
+			</form>
+
+		</div>
+		<br> <br>
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>

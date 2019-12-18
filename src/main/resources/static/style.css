@@ -1,0 +1,130 @@
+/*Feuille de style css pour redefinir certaines propriété en dehors de Bootstrap*/
+body {
+	background:
+		url("https://www2.mes-coloriages-preferes.biz/colorino/Images/Large/Personnages-feeriques-692270.png");
+	background-attachment: fixed;
+	background-size: cover;
+	color: whitesmoke;
+	font-family: fantasy;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	color: whitesmoke;
+}
+
+.easterEgg {
+	background:
+		url("https://cdn.discordapp.com/attachments/631565747281199104/656071661665386497/gil.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/*Modification du style css de la scrollbar*/
+.scrollbar {
+	float: left;
+	height: 100px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+}
+
+#style-1::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #555;
+}
+
+.liste {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+input {
+	color: whitesmoke !important;
+	font-family: cursive;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+textarea {
+	color: whitesmoke !important;
+	font-family: cursive;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.dropOverflow {
+	height: 50%;
+	overflow-y: scroll;
+}
+
+h4 {
+	display: inline-block;
+}
+
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+.heart {
+	background: url("https://www.icone-png.com/png/31/31440.png");
+	background-size: cover;
+	margin-bottom: -7px;
+	padding-bottom: 0px;
+	width: 40px;
+	height: 40px;
+	animation: heartbeat 1s infinite;
+	width: 40px;
+}
+
+/*Petit effet pour facilité la lecture avec un texte clair mais entouré d'un liseré de lumière*/
+img {
+	border-radius: 50% !important;
+	-webkit-box-shadow: 0px 0px 15px 8px lightgoldenrodyellow;
+	-moz-box-shadow: 0px 0px 15px 8px lightgoldenrodyellow;
+	filter: progid:DXImageTransform.Microsoft.Glow(Color=lightgoldenrodyellow,
+		Strength=23);
+	zoom: 1;
+	box-shadow: 0px 0px 15px 8px lightgoldenrodyellow;
+}
+
+/* Pour IE9+ des consignes spéciales doivent être appliquée */
+@media only screen {
+	img {
+		filter: none;
+	}
+}
