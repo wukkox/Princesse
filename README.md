@@ -25,6 +25,4 @@ Le développement de cette application a été pensé sur le Design Pattern MVC.
 | <img src="https://www.consept.fr/wp-content/uploads/JavaScript-2.png" width="25" />  | Javascript  | <img src="https://camo.githubusercontent.com/95d138b90a604f7a12be60f90cb30035fd4f4507/68747470733a2f2f692e696d6775722e636f6d2f5753446c6c77612e706e67" width="25" /> |     Json via API 
 
 
-![model MVC](https://cdn.discordapp.com/attachments/631548145737662504/656820219767029761/DiagrammePrincesses.jpg "Model MVC")
-
-<img onmouseout="this.src='https://cdn.discordapp.com/attachments/631548145737662504/656820219767029761/DiagrammePrincesses.jpg';" onmouseover="this.src='https://github.com/wukkox/Princesse/blob/master/schema_photo.jpg?raw=true';" src="https://cdn.discordapp.com/attachments/631548145737662504/656820219767029761/DiagrammePrincesses.jpg" />
+<img onmouseout="this.src='https://cdn.discordapp.com/attachments/631548145737662504/656820219767029761/DiagrammePrincesses.jpg';" onmouseover="this.src='https://www.consept.fr/wp-content/uploads/JavaScript-2.png';" src="https://cdn.discordapp.com/attachments/631548145737662504/656820219767029761/DiagrammePrincesses.jpg" />
