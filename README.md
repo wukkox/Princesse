@@ -42,4 +42,4 @@ Le développement de cette application a été pensé sur le Design Pattern MVC.
 <img src="https://github.com/wukkox/Princesse/blob/master/endpoint_princesses.PNG?raw=true">
 
 * # /error
-<img src="https://github.com/wukkox/Princesse/blob/master/endpoint_hello.PNG?raw=true">
+<img src="https://github.com/wukkox/Princesse/blob/master/endpoint_error.PNG?raw=true">
