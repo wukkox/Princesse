@@ -43,3 +43,7 @@ Le développement de cette application a été pensé sur le Design Pattern MVC.
 
 * # /error
 <img src="https://github.com/wukkox/Princesse/blob/master/endpoint_error.PNG?raw=true">
+
+# Page d'accueil de l'application
+
+<img src="https://media.discordapp.net/attachments/631548145737662504/656818808002183168/unknown.png?width=1200&height=568">
