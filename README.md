@@ -18,11 +18,11 @@ Le développement de cette application a été pensé sur le Design Pattern MVC.
 
 ## **Liste des techno utilisés pour cette application**
 
-| Front-End   |  | Back-End    |       |
+| Front-End  |   | Back-End |       |
 | ------------- |:-------------:| ------------- |:-------------:|
-| HTML  |  <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_256.png" width="25" />      | Java | <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/2/2e/Java_Logo.svg/1200px-Java_Logo.svg.png" width="25" />
-| CSS    | <img src="https://icons-for-free.com/iconfiles/png/512/css3+internet+style+technology+web+website+icon-1320192729058533072.png" width="25" />      | TomCat  | <img src="https://cdn.iconscout.com/icon/free/png-256/tomcat-4-1175087.png" width="25" />   
-| Javascript  | <img src="https://www.consept.fr/wp-content/uploads/JavaScript-2.png" width="25" />  | Json via Api | <img src="https://camo.githubusercontent.com/95d138b90a604f7a12be60f90cb30035fd4f4507/68747470733a2f2f692e696d6775722e636f6d2f5753446c6c77612e706e67" width="25" />     
+| <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_256.png" width="25" />  |  HTML      | <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/2/2e/Java_Logo.svg/1200px-Java_Logo.svg.png" width="25" /> |Java 
+| <img src="https://icons-for-free.com/iconfiles/png/512/css3+internet+style+technology+web+website+icon-1320192729058533072.png" width="25" />    |  CSS     | <img src="https://cdn.iconscout.com/icon/free/png-256/tomcat-4-1175087.png" width="25" />  |   TomCat 
+| <img src="https://www.consept.fr/wp-content/uploads/JavaScript-2.png" width="25" />  | Javascript  | <img src="https://camo.githubusercontent.com/95d138b90a604f7a12be60f90cb30035fd4f4507/68747470733a2f2f692e696d6775722e636f6d2f5753446c6c77612e706e67" width="25" /> |     Json via API 
 
 
 ![model MVC](https://cdn.discordapp.com/attachments/631548145737662504/656820219767029761/DiagrammePrincesses.jpg "Model MVC")
