@@ -85,6 +85,9 @@ function chargerPerso(item) {
 	if (item["name"] === "Josselin") {
 		newMenuItemUrl.src = "https://cdn.discordapp.com/attachments/631565747281199104/656950061712015392/201907311605280471226.jpg";
 	}
+	else if (item["name"] === "josselin") {
+		newMenuItemUrl.src = "https://cdn.discordapp.com/attachments/631565747281199104/656950061712015392/201907311605280471226.jpg";
+	}
 
 	let newMenuBg = document.getElementById("body")
 	if (item["name"] === "Maureen") {
@@ -128,6 +131,6 @@ function ajoutPrincesse() {
 			description : document.getElementById("inputDescription").value,
 			url : document.getElementById("inputUrl").value
 		});
-		//document.location.reload(true);
+		document.location.reload(true);
 	});
 }
