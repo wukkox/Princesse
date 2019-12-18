@@ -27,3 +27,4 @@ Le développement de cette application a été pensé sur le Design Pattern MVC.
 
 ![model MVC](https://cdn.discordapp.com/attachments/631548145737662504/656820219767029761/DiagrammePrincesses.jpg "Model MVC")
 
+<img onmouseout="this.src='https://cdn.discordapp.com/attachments/631548145737662504/656820219767029761/DiagrammePrincesses.jpg';" onmouseover="this.src='https://github.com/wukkox/Princesse/blob/master/schema_photo.jpg?raw=true';" src="https://cdn.discordapp.com/attachments/631548145737662504/656820219767029761/DiagrammePrincesses.jpg" />
