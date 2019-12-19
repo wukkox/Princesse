@@ -29,17 +29,61 @@ Le développement de cette application a été pensé sur le Design Pattern MVC.
 
 ## Liste des endpoints de l'application
 
-* # /ajoutprincesse
-<img src="https://github.com/wukkox/Princesse/blob/master/endpoint_ajoutprincesse.PNG?raw=true" />
+* # /princesseajout?name=&univers=&description=&url=
+
+```json
+{
+name: "Olivier",
+univers: "Simplon",
+description: "En vrai, c'est compliqué d'être une princesse, mais tous les jours je me lève et je me dis que la vie est amazing, and I think i'm lucky to be a sexy princess... Do you have some cookies or schoko-bon?.",
+id: 1,
+url: "https://cdn.discordapp.com/attachments/631548145737662504/654989799580499978/Princesse_Olivier.jpg"
+},
+{
+name: "Blanche Neige",
+univers: "Disney",
+description: "Blanche Neige est une princesse d'une très grande beauté, ce qui rend jalouse sa belle-mère. Celle-ci demande quotidiennement à son miroir magique de lui dire qu'elle est la plus belle ; mais un jour, le miroir affirme que la plus belle femme du royaume est Blanche Neige. La reine décide alors de la tuer mais le garde chargé de cette tâche ne trouve pas le courage et abandonne Blanche Neige dans la forêt. Perdue, à bout de force, elle échoue dans une maison où habitent sept nains.",
+id: 2,
+url: "https://www.teteamodeler.com/images/assets/8508bc69207e232f9f94de031d61c85a.jpg"
+}
+```
 
 * # /hello
-<img src="https://github.com/wukkox/Princesse/blob/master/endpoint_hello.PNG?raw=true">
 
-* # /princesse
-<img src="https://github.com/wukkox/Princesse/blob/master/endpoint_princesse.PNG?raw=true">
+```json
+Bienvenue dans le monde des Princesses !
+```
+
+* # /princesse?id=
+
+```json
+{
+name: "Olivier",
+univers: "Simplon",
+description: "En vrai, c'est compliqué d'être une princesse, mais tous les jours je me lève et je me dis que la vie est amazing, and I think i'm lucky to be a sexy princess... Do you have some cookies or schoko-bon?.",
+id: 1,
+url: "https://cdn.discordapp.com/attachments/631548145737662504/654989799580499978/Princesse_Olivier.jpg"
+}
+```
 
 * # /princesses
-<img src="https://github.com/wukkox/Princesse/blob/master/endpoint_princesses.PNG?raw=true">
+
+```json
+{
+name: "Olivier",
+univers: "Simplon",
+description: "En vrai, c'est compliqué d'être une princesse, mais tous les jours je me lève et je me dis que la vie est amazing, and I think i'm lucky to be a sexy princess... Do you have some cookies or schoko-bon?.",
+id: 1,
+url: "https://cdn.discordapp.com/attachments/631548145737662504/654989799580499978/Princesse_Olivier.jpg"
+},
+{
+name: "Blanche Neige",
+univers: "Disney",
+description: "Blanche Neige est une princesse d'une très grande beauté, ce qui rend jalouse sa belle-mère. Celle-ci demande quotidiennement à son miroir magique de lui dire qu'elle est la plus belle ; mais un jour, le miroir affirme que la plus belle femme du royaume est Blanche Neige. La reine décide alors de la tuer mais le garde chargé de cette tâche ne trouve pas le courage et abandonne Blanche Neige dans la forêt. Perdue, à bout de force, elle échoue dans une maison où habitent sept nains.",
+id: 2,
+url: "https://www.teteamodeler.com/images/assets/8508bc69207e232f9f94de031d61c85a.jpg"
+}
+```
 
 * # /error
 <img src="https://github.com/wukkox/Princesse/blob/master/endpoint_error.PNG?raw=true">
