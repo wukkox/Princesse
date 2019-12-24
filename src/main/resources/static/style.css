@@ -3,12 +3,14 @@ body {
 	background:
 		url("https://www2.mes-coloriages-preferes.biz/colorino/Images/Large/Personnages-feeriques-692270.png");
 	background-attachment: fixed;
+	background-repeat: no-repeat;
 	background-size: cover;
-	color: whitesmoke;
-	font-family: fantasy;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	color: whitesmoke;
-}
+	color: white;
+	font-weight: bold;
+	font-family: cursive;
+	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+	font-size: larger;
+	}
 
 .easterEgg {
 	background:
@@ -53,13 +55,11 @@ body {
 input {
 	color: whitesmoke !important;
 	font-family: cursive;
-	text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 textarea {
 	color: whitesmoke !important;
 	font-family: cursive;
-	text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .dropOverflow {
@@ -69,6 +69,9 @@ textarea {
 
 h4 {
 	display: inline-block;
+	font-weight: bold;
+	/*text-shadow: black 0.1em 0.1em 0.1em;*/
+	font-size: xx-large;
 }
 
 
@@ -111,6 +114,9 @@ h4 {
 	width: 40px;
 }
 
+.photo {
+	margin-left: 1vw;
+}
 /*Petit effet pour facilité la lecture avec un texte clair mais entouré d'un liseré de lumière*/
 img {
 	border-radius: 50% !important;

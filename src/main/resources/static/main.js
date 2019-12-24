@@ -1,11 +1,11 @@
-// contient la liste de tous les people reçue par l'api starwars
+// contient la liste de tous les princesses recu par l'api
 var liste = [];
 
 /**
  * Action à réaliser lorsque le dom est chargé
  */
 $(document).ready(function() {
-	// on utilise jquery pour faire appel à l'api de starwars
+	// on utilise jquery pour faire appel à l'api
 	$.ajax({
 		url : "/princesses"
 	}).then(function(data) {
@@ -130,7 +130,13 @@ function ajoutPrincesse() {
 			univers : document.getElementById("inputUnivers").value,
 			description : document.getElementById("inputDescription").value,
 			url : document.getElementById("inputUrl").value
-		});
-		document.location.reload(true);
+		},
+		reload
+		);
+		
 	});
+}
+
+function reload() {
+	document.location.reload(true);
 }
