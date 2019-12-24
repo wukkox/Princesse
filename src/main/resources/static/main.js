@@ -130,13 +130,6 @@ function ajoutPrincesse() {
 			univers : document.getElementById("inputUnivers").value,
 			description : document.getElementById("inputDescription").value,
 			url : document.getElementById("inputUrl").value
-		},
-		reload
-		);
-		
+		});
 	});
-}
-
-function reload() {
-	document.location.reload(true);
 }
