@@ -1,4 +1,8 @@
-// contient la liste de tous les princesses recu par l'api
+//appel des fonctions pour qu'elles soient à l'ecoute		
+ajoutPrincesse();
+rechercherParId();
+
+// contient la liste de tous les princesses reçu par l'api
 var liste = [];
 
 /**
@@ -11,9 +15,11 @@ $(document).ready(function() {
 	}).then(function(data) {
 		liste = data;
 		chargerMenu();
-		ajoutPrincesse();
-		rechercherParId();
 	});
+});
+
+$(document).ready(function() {
+	// on utilise jquery pour faire appel à l'api
 	$.ajax({
 		url : "/hello"
 	}).then(function(hello) {
@@ -37,25 +43,25 @@ function chargerMenu() {
 			// console.log(event.toElement.innerText);
 			chargerPerso(item);
 		});
-
 		document.getElementById("style-1").appendChild(newMenuItem);
-
 	});
 }
-
 
 function rechercherParId() {
-    document.getElementById("Search").addEventListener("click",function(event){
-		$.ajax({
-			url:"/princesse?id="+document.getElementById("SearchId").value,
-			success : (chargerPerso),
-			error : (error)
-		})
-	});
+	document.getElementById("Search").addEventListener(
+			"click",
+			function(event) {
+				$.ajax({
+					url : "/princesse?id="
+							+ document.getElementById("SearchId").value,
+					success : (chargerPerso),
+					error : (error)
+				})
+			});
 }
 
-function error(data){
-	document.location.href="/err"
+function error(data) {
+	document.location.href = "/err"
 }
 
 function chargerTitre(hello) {
@@ -81,11 +87,10 @@ function chargerPerso(item) {
 	} else {
 		newMenuItemUrl.src = item["url"];
 	}
-	
+
 	if (item["name"] === "Josselin") {
 		newMenuItemUrl.src = "https://cdn.discordapp.com/attachments/631565747281199104/656950061712015392/201907311605280471226.jpg";
-	}
-	else if (item["name"] === "josselin") {
+	} else if (item["name"] === "josselin") {
 		newMenuItemUrl.src = "https://cdn.discordapp.com/attachments/631565747281199104/656950061712015392/201907311605280471226.jpg";
 	}
 
@@ -97,7 +102,7 @@ function chargerPerso(item) {
 	else if (item["name"] === "maureen") {
 		newMenuBg.className = "easterEgg";
 	}
-	
+
 	else if (item["name"] === "Nico") {
 		newMenuBg.className = "easterEgg";
 		newMenuItemUrl.src = "https://cdn.discordapp.com/attachments/631565747281199104/656946996069924875/Princesse-2017-1.jpg";
@@ -107,7 +112,7 @@ function chargerPerso(item) {
 		newMenuBg.className = "easterEgg";
 		newMenuItemUrl.src = "https://cdn.discordapp.com/attachments/631565747281199104/656946996069924875/Princesse-2017-1.jpg";
 	}
-	
+
 	else if (item["name"] === "nicolas") {
 		newMenuBg.className = "easterEgg";
 		newMenuItemUrl.src = "https://cdn.discordapp.com/attachments/631565747281199104/656946996069924875/Princesse-2017-1.jpg";
@@ -124,12 +129,17 @@ function chargerPerso(item) {
 };
 
 function ajoutPrincesse() {
-	document.getElementById("submitPrincesse").addEventListener("click", function(e) {
-		$.post("/princesseajout", {
+	document.getElementById("submitPrincesse").addEventListener("click",function(e) {
+		$.post("/princesseajout",{
 			name : document.getElementById("inputNom").value,
 			univers : document.getElementById("inputUnivers").value,
 			description : document.getElementById("inputDescription").value,
-			url : document.getElementById("inputUrl").value
+			url : document.getElementById("inputUrl").value,
+			success : (reload),
 		});
 	});
+}
+
+function reload() {
+	document.location.reload(true);
 }
