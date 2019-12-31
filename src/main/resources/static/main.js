@@ -1,13 +1,13 @@
 //appel des fonctions pour qu'elles soient à l'ecoute		
 ajoutPrincesse();
 rechercherParId();
-
+chargerMenu();
+chargerTitre();
 // contient la liste de tous les princesses reçu par l'api
 var liste = [];
 
 /**
  * Action à réaliser lorsque le dom est chargé
- */
 $(document).ready(function() {
 	// on utilise jquery pour faire appel à l'api
 	$.ajax({
@@ -26,24 +26,31 @@ $(document).ready(function() {
 		chargerTitre(hello);
 	});
 });
+ */
 
 /**
  * remplit le dropdown menu avec les noms de tous les people de la liste
  */
 function chargerMenu() {
-	liste.forEach(function(item) {
-		// console.log(item);
-		var newMenuItem = document.createElement('button');
-		newMenuItem.className = "dropdown-item btn-dark";
-		newMenuItem.type = "button";
-		newMenuItem.textContent = item["name"];
+	$.ajax({
+		url : "/princesses"
+	}).then(function(data) {
+		liste = data;
+		liste.forEach(function(item) {
+			// console.log(item);
+			var newMenuItem = document.createElement('button');
+			newMenuItem.className = "dropdown-item btn-dark";
+			newMenuItem.type = "button";
+			newMenuItem.textContent = item["name"];
 
-		newMenuItem.addEventListener('click', function(event) {
-			// l'action à effectuer lorsqu'on clique sur un element du dropdown
-			// console.log(event.toElement.innerText);
-			chargerPerso(item);
+			newMenuItem.addEventListener('click', function(event) {
+				// l'action à effectuer lorsqu'on clique sur un element du
+				// dropdown
+				// console.log(event.toElement.innerText);
+				chargerPerso(item);
+			});
+			document.getElementById("style-1").appendChild(newMenuItem);
 		});
-		document.getElementById("style-1").appendChild(newMenuItem);
 	});
 }
 
@@ -64,10 +71,13 @@ function error(data) {
 	document.location.href = "/err"
 }
 
-function chargerTitre(hello) {
-
-	var newTitre = document.getElementById("title");
-	newTitre.textContent = hello;
+function chargerTitre() {
+	$.ajax({
+		url : "/hello"
+	}).then(function(hello) {
+		var newTitre = document.getElementById("title");
+		newTitre.textContent = hello;
+	});
 };
 
 function chargerPerso(item) {
@@ -129,15 +139,26 @@ function chargerPerso(item) {
 };
 
 function ajoutPrincesse() {
-	document.getElementById("submitPrincesse").addEventListener("click",function(e) {
-		$.post("/princesseajout",{
-			name : document.getElementById("inputNom").value,
-			univers : document.getElementById("inputUnivers").value,
-			description : document.getElementById("inputDescription").value,
-			url : document.getElementById("inputUrl").value,
-			success : (reload),
-		});
-	});
+	document
+			.getElementById("submitPrincesse")
+			.addEventListener(
+					"click",
+					function(e) {
+						$
+								.post(
+										"/princesseajout",
+										{
+											name : document
+													.getElementById("inputNom").value,
+											univers : document
+													.getElementById("inputUnivers").value,
+											description : document
+													.getElementById("inputDescription").value,
+											url : document
+													.getElementById("inputUrl").value,
+											success : (reload),
+										});
+					});
 }
 
 function reload() {
