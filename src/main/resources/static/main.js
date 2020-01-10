@@ -7,25 +7,13 @@ chargerTitre();
 var liste = [];
 
 /**
- * Action à réaliser lorsque le dom est chargé
-$(document).ready(function() {
-	// on utilise jquery pour faire appel à l'api
-	$.ajax({
-		url : "/princesses"
-	}).then(function(data) {
-		liste = data;
-		chargerMenu();
-	});
-});
-
-$(document).ready(function() {
-	// on utilise jquery pour faire appel à l'api
-	$.ajax({
-		url : "/hello"
-	}).then(function(hello) {
-		chargerTitre(hello);
-	});
-});
+ * Action à réaliser lorsque le dom est chargé $(document).ready(function() { //
+ * on utilise jquery pour faire appel à l'api $.ajax({ url : "/princesses"
+ * }).then(function(data) { liste = data; chargerMenu(); }); });
+ * 
+ * $(document).ready(function() { // on utilise jquery pour faire appel à l'api
+ * $.ajax({ url : "/hello" }).then(function(hello) { chargerTitre(hello); });
+ * });
  */
 
 /**
@@ -139,26 +127,15 @@ function chargerPerso(item) {
 };
 
 function ajoutPrincesse() {
-	document
-			.getElementById("submitPrincesse")
-			.addEventListener(
-					"click",
-					function(e) {
-						$
-								.post(
-										"/princesseajout",
-										{
-											name : document
-													.getElementById("inputNom").value,
-											univers : document
-													.getElementById("inputUnivers").value,
-											description : document
-													.getElementById("inputDescription").value,
-											url : document
-													.getElementById("inputUrl").value,
-											success : (reload),
-										});
-					});
+	document.getElementById("submitPrincesse").addEventListener("click",function(e) {
+		let newPrincesse = {
+				name : document.getElementById("inputNom").value,
+				univers : document.getElementById("inputUnivers").value,
+				description : document.getElementById("inputDescription").value,
+				url : document.getElementById("inputUrl").value
+		}
+		$.post("/princesseajout", newPrincesse).then(reload);
+	});
 }
 
 function reload() {
